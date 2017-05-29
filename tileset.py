@@ -159,7 +159,7 @@ class Tileset:
                 misc.imsave(filename, cropped_tile)
                 print('Saved tile ' + str(col) + ', ' + str(row))
 
-        return Tileset(output_path, self.cols, self.rows, self.tilew, self.tileh, self.ext)
+        return Tileset(output_path, self.cols, self.rows, self.tilew, self.tileh, self.scale, self.detection_method, self.ext)
 
     def detectBlobs(self, col, row, globalize=False):
         """Run detection and return array of detected blobs for the specified tile

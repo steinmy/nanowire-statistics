@@ -410,7 +410,7 @@ class Tileset:
                     print('Loaded blobs, but array was empty. Detecting blobs.')
                     self.detectAllBlobs()
             except FileNotFoundError:
-                print('Blobs file not found! Detecting blobs.')
+                print('Blobs file not found. Detecting blobs.')
                 self.detectAllBlobs()
 
         if self.blobs.shape[0] > 0:
@@ -493,7 +493,7 @@ class Tileset:
                     lattice = self.getLattice()
                     self.assignBlobs(blobs, lattice)
             except FileNotFoundError:
-                print('Assigned blobs file not found! Assigning.')
+                print('Assigned blobs file not found. Assigning.')
                 blobs = self.getBlobs()
                 lattice = self.getLattice()
                 self.assignBlobs(blobs, lattice)
@@ -513,6 +513,7 @@ class Tileset:
         plt.imshow(tile, cmap='gray', interpolation='nearest')
         f.plotCircles(ax, blobs, fig, dict(color='#114400', linewidth=4, fill=False))
         plt.plot(offset[0], offset[1], 'o', color='red')
+        plt.title("Please click two points")
         plt.tight_layout()
 
         # Get input
@@ -578,6 +579,8 @@ class Tileset:
 
         # Angles of the lattice vectors are given by manual input
         angles = self.getAnglesFromInput(tile, blobs, offset)
+        if len(angles) < 2:
+            raise RuntimeError("Insufficient input received.")
         # The magnitude of the lattice vectors is given by the typical nearest neighbor distance
         peak = self.getTypicalDistance(self.getSubsetOfBlobs(0, 4*tw, 0, 4*th))
 

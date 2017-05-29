@@ -1,0 +1,10 @@
+# Ignore stored variables
+*.p
+
+# Ignore IDE project files
+*.sublime-workspace
+*.sublime-project
+.idea/*
+
+__pycache__*
+.ipynb_checkpoints/*

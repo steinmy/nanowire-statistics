@@ -1,0 +1,73 @@
+name: NWstats
+channels: !!python/tuple
+- defaults
+dependencies:
+- bzip2=1.0.6=vc14_3
+- cycler=0.10.0=py35_0
+- decorator=4.0.10=py35_1
+- freetype=2.5.5=vc14_1
+- https://conda.binstar.org/menpo::opencv3=3.1.0=py35_0
+- icu=57.1=vc14_0
+- jpeg=8d=vc14_2
+- libpng=1.6.22=vc14_0
+- libtiff=4.0.6=vc14_2
+- matplotlib=1.5.3=np111py35_1
+- mkl=11.3.3=1
+- networkx=1.11=py35_0
+- numpy=1.11.2=py35_0
+- openssl=1.0.2j=vc14_0
+- pillow=3.4.2=py35_0
+- pip=9.0.1=py35_0
+- pyparsing=2.1.4=py35_0
+- pyqt=5.6.0=py35_0
+- python=3.5.2=0
+- python-dateutil=2.6.0=py35_0
+- pytz=2016.7=py35_0
+- qt=5.6.0=vc14_0
+- scikit-image=0.12.3=np111py35_1
+- scikit-learn=0.18=np111py35_0
+- scipy=0.18.1=np111py35_0
+- setuptools=27.2.0=py35_1
+- sip=4.18=py35_0
+- six=1.10.0=py35_0
+- tk=8.5.18=vc14_0
+- vs2015_runtime=14.0.25123=0
+- wheel=0.29.0=py35_0
+- zlib=1.2.8=vc14_3
+- pip:
+  - bleach==2.0.0
+  - colorama==0.3.9
+  - entrypoints==0.2.2
+  - html5lib==0.999999999
+  - ipykernel==4.6.1
+  - ipython==6.0.0
+  - ipython-genutils==0.2.0
+  - ipywidgets==6.0.0
+  - jedi==0.10.2
+  - jinja2==2.9.6
+  - jsonschema==2.6.0
+  - jupyter==1.0.0
+  - jupyter-client==5.0.1
+  - jupyter-console==5.1.0
+  - jupyter-core==4.3.0
+  - markupsafe==1.0
+  - mistune==0.7.4
+  - nbconvert==5.2.1
+  - nbformat==4.3.0
+  - notebook==5.0.0
+  - pandocfilters==1.4.1
+  - pickleshare==0.7.4
+  - prompt-toolkit==1.0.14
+  - pygments==2.2.0
+  - pyzmq==16.0.2
+  - qtconsole==4.3.0
+  - simplegeneric==0.8.1
+  - testpath==0.3.1
+  - tornado==4.5.1
+  - traitlets==4.3.2
+  - wcwidth==0.1.7
+  - webencodings==0.5.1
+  - widgetsnbextension==2.0.0
+  - win-unicode-console==0.5
+prefix: C:\Users\Steinar\Anaconda3\envs\NWstats
+

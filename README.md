@@ -1,5 +1,7 @@
 This repository contains all the code necessary to run a demo of the capabilities of the Nanowire Statistics software, as well as the Jupyter notebook that runs the demo. It does not contain the entire codebase of the project. This will be released during the summer of 2017.
 
+To reference this work, please cite us (paper forthcoming over the next month).
+
 To run the code, you need to install a distribution of Python, and the necessary packages. The easiest way to make sure you have the right packages is to install Anaconda, and import the Anaconda environment from the file NWstats.yml
 
 Note: This tutorial is written from my experiences running the software on Windows 10. It might or might not work the same way for other operating systems.
